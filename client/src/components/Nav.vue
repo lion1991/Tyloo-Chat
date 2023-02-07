@@ -22,8 +22,6 @@
     <!-- 底部工具栏 -->
     <a-tooltip placement="topLeft" arrow-point-at-center>
       <div slot="title">
-        <div>qq群289438105~</div>
-        <div>觉得还不错的话可以Star鼓励一下~</div>
         <div>截图粘贴可发送图片</div>
       </div>
       <a-icon type="bulb" class="tool-tip icon" />
