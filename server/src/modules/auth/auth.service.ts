@@ -84,13 +84,13 @@ export class AuthService {
       friendId: defaultRobotId
     })
     // 机器人欢迎语(默认留言)
-    await this.friendMessageRepository.save({
-      userId: defaultRobotId,
-      friendId: newUser.userId,
-      content: defaultWelcomeMessage,
-      messageType: 'text',
-      time: new Date().valueOf()
-    })
+    //await this.friendMessageRepository.save({
+    //  userId: defaultRobotId,
+    //  friendId: newUser.userId,
+    //  content: defaultWelcomeMessage,
+    //  messageType: 'text',
+    //  time: new Date().valueOf()
+    //})
     return {
       msg: '注册成功',
       data: {
