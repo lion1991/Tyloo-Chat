@@ -17,8 +17,6 @@
     <!-- 底部工具栏 -->
     <a-tooltip placement="topLeft" arrow-point-at-center>
       <div slot="title">
-        <div>qq群289438105~</div>
-        <div>觉得还不错的话可以Star鼓励一下~</div>
         <div>截图粘贴可发送图片</div>
       </div>
       <a-icon type="bulb" class="tool-tip icon" />
@@ -45,7 +43,7 @@
         @click="setActiveTabName('contacts')"
       />
     </a-tooltip>
-    <a href="https://github.com/BoBoooooo/tyloo-chat" target="_blank" class="tool-github icon"><a-icon type="github" /></a>
+    //<a href="https://github.com/BoBoooooo/tyloo-chat" target="_blank" class="tool-github icon"><a-icon type="github" /></a>
     <a-icon class="tool-out icon" type="poweroff" @click="logout" />
     <a-modal title="用户信息" :visible="showUserModal" footer="" @cancel="showUserModal = false">
       <div class="tool-user">
