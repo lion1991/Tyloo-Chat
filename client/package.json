@@ -1,7 +1,7 @@
 {
-  "name": "tyloo-chat-client",
+  "name": "chat-client",
   "version": "1.0.0",
-  "author": "WuXianPing",
+  "author": "Wu",
   "license": "MIT",
   "scripts": {
     "start": "vue-cli-service electron:serve --mode dev",
