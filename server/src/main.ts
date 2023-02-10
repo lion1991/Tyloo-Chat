@@ -6,6 +6,16 @@ import { logger } from './common/middleware/logger.middleware'
 import { ResponseInterceptor } from './common/interceptor/response.interceptor'
 import { join } from 'path'
 import { IoAdapter } from '@nestjs/platform-socket.io'
+import * as http from 'http'
+import * as https from 'https'
+import * as fs from 'fs'
+import * as express from 'express'
+
+const httpsOptions = {
+  ca: fs.readFileSync('/www/server/web_conf/ssl/xxxx.xyz/fullchain.pem'),
+  key: fs.readFileSync('/www/server/web_conf/ssl/xxxx.xyz/privkey.pem'),
+  cert: fs.readFileSync('/www/server/web_conf/ssl/xxxx.xyz/fullchain.pem'),
+}
 
 const fix_socket_io_bug = require('./fix')
 
@@ -13,7 +23,8 @@ async function bootstrap() {
   await fix_socket_io_bug()
 
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-    cors: true
+    cors: true,
+    httpsOptions,
   })
   // https://github.com/vercel/ncc/issues/513
   // fix ncc打包后提示找不到该依赖问题
