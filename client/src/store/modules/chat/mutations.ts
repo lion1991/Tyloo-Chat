@@ -189,7 +189,7 @@ const mutations: MutationTree<ChatState> = {
 
   // 给某个聊天组添加未读消息
   [ADD_UNREAD_GATHER](state, payload: string) {
-    document.title = '【有未读消息】TylooChat聊天室';
+    document.title = '【有未读消息】内部通讯专用';
     if (!state.unReadGather[payload]) {
       Vue.set(state.unReadGather, payload, 1);
     } else {
@@ -199,7 +199,7 @@ const mutations: MutationTree<ChatState> = {
 
   // 给某个聊天组清空未读消息
   [LOSE_UNREAD_GATHER](state, payload: string) {
-    document.title = 'TylooChat聊天室';
+    document.title = '内部通讯专用';
     Vue.set(state.unReadGather, payload, 0);
   },
 
