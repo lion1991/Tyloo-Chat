@@ -44,7 +44,7 @@ module.exports = {
       builderOptions: {
         // 安装包相关信息
         appId: 'cn.com.Wu.tyloochat',
-        productName: 'TylooChat',
+        productName: 'Chat',
         copyright: 'By Wu',
         directories: {
           // electron资源编译输出路径
