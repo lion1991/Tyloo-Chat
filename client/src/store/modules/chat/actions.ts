@@ -31,7 +31,7 @@ const actions: ActionTree<ChatState, RootState> = {
   // 初始化socket连接和监听socket事件
   async connectSocket({ commit, state, dispatch, rootState }) {
     const { user, token } = rootState.app;
-    const socket: SocketIOClient.Socket = io.connect(`ws://${process.env.VUE_APP_API_URL!.split('http://')[1]}`, {
+    const socket: SocketIOClient.Socket = io.connect(`wss://${process.env.VUE_APP_API_URL!.split('https://')[1]}`, {
       reconnection: true,
       query: {
         token,
