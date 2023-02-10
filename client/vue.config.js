@@ -43,9 +43,9 @@ module.exports = {
       // 官方文档：https://www.electron.build/configuration/configuration
       builderOptions: {
         // 安装包相关信息
-        appId: 'cn.com.bobo.tyloochat',
+        appId: 'cn.com.Wu.tyloochat',
         productName: 'TylooChat',
-        copyright: 'Copyright © BoBo',
+        copyright: 'By Wu',
         directories: {
           // electron资源编译输出路径
           output: './dist',
