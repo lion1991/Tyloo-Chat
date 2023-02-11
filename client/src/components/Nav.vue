@@ -43,7 +43,7 @@
         @click="setActiveTabName('contacts')"
       />
     </a-tooltip>
-    // <a href="https://github.com/BoBoooooo/tyloo-chat" target="_blank" class="tool-github icon"><a-icon type="github" /></a>
+    <!-- <a href="https://github.com/BoBoooooo/tyloo-chat" target="_blank" class="tool-github icon"><a-icon type="github" /></a> -->
     <a-icon class="tool-out icon" type="poweroff" @click="logout" />
     <a-modal title="用户信息" :visible="showUserModal" footer="" @cancel="showUserModal = false">
       <div class="tool-user">
